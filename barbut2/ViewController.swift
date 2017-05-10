@@ -20,6 +20,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func RollButton(_ sender: UIButton) {
+        let rand1 = DiceDataController.rand()
+        let rand2 = DiceDataController.rand()
+        
+        Dice1.image = UIImage(named: "dice\(rand1)")
+        Dice2.image = UIImage(named: "dice\(rand2)")
+        
+        ScoreLabel.text = "Score: \(rand1 + rand2)"
+        
+        OldScoreLabel.text = "Old score: \(score)"
+        
+        score = rand1 + rand2
+        
+    }
+    var score = 0
+    
+    
 
+    @IBOutlet weak var Dice1: UIImageView!
+    
+    @IBOutlet weak var Dice2: UIImageView!
+   
+    @IBOutlet weak var ScoreLabel: UILabel!
+    @IBOutlet weak var OldScoreLabel: UILabel!
+    
 }
 

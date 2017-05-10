@@ -12,6 +12,7 @@
 		7AC4EAF61EC3600E00A28CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4EAF41EC3600E00A28CDD /* Main.storyboard */; };
 		7AC4EAF81EC3600E00A28CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4EAF71EC3600E00A28CDD /* Assets.xcassets */; };
 		7AC4EAFB1EC3600E00A28CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC4EAF91EC3600E00A28CDD /* LaunchScreen.storyboard */; };
+		7AC4EB041EC363BC00A28CDD /* DiceDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4EB031EC363BC00A28CDD /* DiceDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7AC4EAF71EC3600E00A28CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AC4EAFA1EC3600E00A28CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AC4EAFC1EC3600E00A28CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC4EB031EC363BC00A28CDD /* DiceDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		7AC4EAEF1EC3600E00A28CDD /* barbut2 */ = {
 			isa = PBXGroup;
 			children = (
-				7AC4EAF01EC3600E00A28CDD /* AppDelegate.swift */,
+				7AC4EB021EC3603800A28CDD /* Supporting files */,
 				7AC4EAF21EC3600E00A28CDD /* ViewController.swift */,
 				7AC4EAF41EC3600E00A28CDD /* Main.storyboard */,
+				7AC4EB031EC363BC00A28CDD /* DiceDataController.swift */,
 				7AC4EAF71EC3600E00A28CDD /* Assets.xcassets */,
+			);
+			path = barbut2;
+			sourceTree = "<group>";
+		};
+		7AC4EB021EC3603800A28CDD /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7AC4EAF01EC3600E00A28CDD /* AppDelegate.swift */,
 				7AC4EAF91EC3600E00A28CDD /* LaunchScreen.storyboard */,
 				7AC4EAFC1EC3600E00A28CDD /* Info.plist */,
 			);
-			path = barbut2;
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC4EAF31EC3600E00A28CDD /* ViewController.swift in Sources */,
+				7AC4EB041EC363BC00A28CDD /* DiceDataController.swift in Sources */,
 				7AC4EAF11EC3600E00A28CDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
